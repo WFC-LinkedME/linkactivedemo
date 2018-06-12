@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+    <cc.lkme.linkactive.view.LMADContainer
+            android:id="@+id/lm_ad_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:padding="6dp"
+            android:background="@android:color/white"
+            >
+
+        <include layout="@layout/ad_layout"/>
+    </cc.lkme.linkactive.view.LMADContainer>
+
+</LinearLayout>
