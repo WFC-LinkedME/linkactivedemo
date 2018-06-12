@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "cc.lkme.linkactivedemo"
+        applicationId "com.microquation.linkedme"
         minSdkVersion 14
         targetSdkVersion 27
         versionCode 12
@@ -27,4 +27,5 @@ dependencies {
     implementation "com.android.support:support-v4:27.1.1"
     implementation "com.android.support:recyclerview-v7:27.1.1"
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation "com.tencent.mm.opensdk:wechat-sdk-android-without-mta:5.1.4"
 }
