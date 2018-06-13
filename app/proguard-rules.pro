@@ -19,3 +19,6 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+# 请不要混淆link active sdk jar包
+-keep class cc.lkme.linkactive.** { *; }
