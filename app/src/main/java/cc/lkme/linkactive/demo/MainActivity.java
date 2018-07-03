@@ -1,4 +1,4 @@
-package cc.lkme.linkactivedemo;
+package cc.lkme.linkactive.demo;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.facebook.drawee.view.SimpleDraweeView;
 
+import cc.lkme.linkactive.R;
 import cc.lkme.linkactive.callback.OnAdStatusListener;
 import cc.lkme.linkactive.data.AdInfo;
 import cc.lkme.linkactive.view.LMADContainer;
@@ -88,6 +89,49 @@ public class MainActivity extends AppCompatActivity {
 
                 // 不采用广告视图，直接获取可显示的广告数据，自定义广告显示样式
                 lm_ad_container.getAd("4000061_390", new OnAdStatusListener() {
+                    @Override
+                    public void onGetAd(boolean status, AdInfo adInfo) {
+                        if (status) {
+                            // 调用方法显示广告视图
+                            lm_ad_container.setAdVisibility(true);
+                            // 以下处理自定义视图展示
+                            // 标题
+                            adInfo.getTitle();
+                            // 副标题
+                            adInfo.getSub_title();
+                            // 内容
+                            adInfo.getContent();
+                            // 图片列表
+                            adInfo.getImgs();
+                            // adInfo.getImgs().get(0) 获取到的是1280*720尺寸图片
+                            Uri uri = Uri.parse(adInfo.getImgs().get(0));
+                            SimpleDraweeView draweeView = findViewById(R.id.ad_img);
+                            draweeView.setImageURI(uri);
+                            // adInfo.getImgs().get(1) 获取到的是120*120尺寸的logo图片
+                            Uri iconUri = Uri.parse(adInfo.getImgs().get(1));
+                            SimpleDraweeView ad_icon = findViewById(R.id.ad_icon);
+                            ad_icon.setImageURI(iconUri);
+                            TextView title = findViewById(R.id.title);
+                            title.setText(adInfo.getTitle());
+                            TextView sub_title = findViewById(R.id.sub_title);
+                            sub_title.setText(adInfo.getSub_title());
+
+                        } else {
+                            // 无广告，不展示
+                        }
+
+                    }
+                });
+            }
+        });
+
+        Button get_mini_ad = findViewById(R.id.get_mini_ad);
+        get_mini_ad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                // 不采用广告视图，直接获取可显示的广告数据，自定义广告显示样式
+                lm_ad_container.getAd("4000061_417", new OnAdStatusListener() {
                     @Override
                     public void onGetAd(boolean status, AdInfo adInfo) {
                         if (status) {

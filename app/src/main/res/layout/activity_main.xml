@@ -44,6 +44,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
+        <Button
+                android:id="@+id/get_mini_ad"
+                android:text="获取微信小程序广告内容"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
         <cc.lkme.linkactive.view.LMADContainer
                 android:id="@+id/lm_ad_container"
                 android:layout_width="match_parent"
@@ -55,7 +61,6 @@
 
             <include layout="@layout/ad_layout"/>
         </cc.lkme.linkactive.view.LMADContainer>
-
 
     </LinearLayout>
 

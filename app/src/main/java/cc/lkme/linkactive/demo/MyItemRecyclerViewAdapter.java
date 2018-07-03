@@ -1,4 +1,4 @@
-package cc.lkme.linkactivedemo;
+package cc.lkme.linkactive.demo;
 
 import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
@@ -14,27 +14,28 @@ import com.facebook.drawee.view.SimpleDraweeView;
 import java.util.List;
 
 import cc.lkme.linkactive.LinkedME;
+import cc.lkme.linkactive.R;
 import cc.lkme.linkactive.callback.OnAdStatusListener;
 import cc.lkme.linkactive.data.AdInfo;
+import cc.lkme.linkactive.demo.ItemFragment.OnListFragmentInteractionListener;
+import cc.lkme.linkactive.demo.dummy.DummyContent.DummyItem;
 import cc.lkme.linkactive.view.LMADContainer;
-import cc.lkme.linkactivedemo.dummy.DummyContent;
 
-import static cc.lkme.linkactivedemo.dummy.DummyContent.itemViewTypeAd;
-import static cc.lkme.linkactivedemo.dummy.DummyContent.itemViewTypeNormal;
-
+import static cc.lkme.linkactive.demo.dummy.DummyContent.itemViewTypeAd;
+import static cc.lkme.linkactive.demo.dummy.DummyContent.itemViewTypeNormal;
 
 /**
- * {@link RecyclerView.Adapter} that can display a {@link DummyContent.DummyItem} and makes a call to the
- * specified {@link ItemFragment.OnListFragmentInteractionListener}.
+ * {@link RecyclerView.Adapter} that can display a {@link DummyItem} and makes a call to the
+ * specified {@link OnListFragmentInteractionListener}.
  * TODO: Replace the implementation with code for your data type.
  */
 public class MyItemRecyclerViewAdapter extends RecyclerView.Adapter<MyItemRecyclerViewAdapter.ViewHolder> {
 
-    private final List<DummyContent.DummyItem> mValues;
-    private final ItemFragment.OnListFragmentInteractionListener mListener;
+    private final List<DummyItem> mValues;
+    private final OnListFragmentInteractionListener mListener;
     private RecyclerView recyclerView;
 
-    public MyItemRecyclerViewAdapter(RecyclerView recyclerView, List<DummyContent.DummyItem> items, ItemFragment.OnListFragmentInteractionListener listener) {
+    public MyItemRecyclerViewAdapter(RecyclerView recyclerView, List<DummyItem> items, OnListFragmentInteractionListener listener) {
         this.recyclerView = recyclerView;
         mValues = items;
         mListener = listener;
@@ -136,7 +137,7 @@ public class MyItemRecyclerViewAdapter extends RecyclerView.Adapter<MyItemRecycl
         public final View mView;
         public final TextView mIdView;
         public final TextView mContentView;
-        public DummyContent.DummyItem mItem;
+        public DummyItem mItem;
 
         public ViewHolder(View view) {
             super(view);

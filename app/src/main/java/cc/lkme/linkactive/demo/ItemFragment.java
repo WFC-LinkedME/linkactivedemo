@@ -1,4 +1,4 @@
-package cc.lkme.linkactivedemo;
+package cc.lkme.linkactive.demo;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -12,8 +12,9 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
-import cc.lkme.linkactivedemo.dummy.DummyContent;
-
+import cc.lkme.linkactive.R;
+import cc.lkme.linkactive.demo.dummy.DummyContent;
+import cc.lkme.linkactive.demo.dummy.DummyContent.DummyItem;
 
 /**
  * A fragment representing a list of Items.
@@ -121,6 +122,6 @@ public class ItemFragment extends Fragment {
      */
     public interface OnListFragmentInteractionListener {
         // TODO: Update argument type and name
-        void onListFragmentInteraction(DummyContent.DummyItem item);
+        void onListFragmentInteraction(DummyItem item);
     }
 }

@@ -1,10 +1,11 @@
-package cc.lkme.linkactivedemo;
+package cc.lkme.linkactive.demo;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.FrameLayout;
 
+import cc.lkme.linkactive.R;
 import cc.lkme.linkactive.callback.OnAdStatusListener;
 import cc.lkme.linkactive.data.AdInfo;
 import cc.lkme.linkactive.view.LMBannerAdView;
