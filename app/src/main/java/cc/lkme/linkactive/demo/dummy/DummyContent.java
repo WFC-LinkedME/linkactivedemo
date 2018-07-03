@@ -1,4 +1,4 @@
-package cc.lkme.linkactivedemo.dummy;
+package cc.lkme.linkactive.demo.dummy;
 
 import java.util.ArrayList;
 import java.util.HashMap;

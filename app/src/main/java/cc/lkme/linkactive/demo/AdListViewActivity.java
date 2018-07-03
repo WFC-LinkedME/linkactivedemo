@@ -1,4 +1,4 @@
-package cc.lkme.linkactivedemo;
+package cc.lkme.linkactive.demo;
 
 import android.content.Context;
 import android.content.Intent;
@@ -21,14 +21,14 @@ import com.facebook.drawee.view.SimpleDraweeView;
 import java.util.List;
 
 import cc.lkme.linkactive.LinkedME;
+import cc.lkme.linkactive.R;
 import cc.lkme.linkactive.callback.OnAdStatusListener;
 import cc.lkme.linkactive.data.AdInfo;
+import cc.lkme.linkactive.demo.dummy.DummyContent;
 import cc.lkme.linkactive.view.LMADContainer;
-import cc.lkme.linkactivedemo.dummy.DummyContent;
 
-import static cc.lkme.linkactivedemo.dummy.DummyContent.itemViewTypeAd;
-import static cc.lkme.linkactivedemo.dummy.DummyContent.itemViewTypeNormal;
-
+import static cc.lkme.linkactive.demo.dummy.DummyContent.itemViewTypeAd;
+import static cc.lkme.linkactive.demo.dummy.DummyContent.itemViewTypeNormal;
 
 public class AdListViewActivity extends AppCompatActivity {
 

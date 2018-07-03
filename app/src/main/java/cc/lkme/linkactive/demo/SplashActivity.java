@@ -1,4 +1,4 @@
-package cc.lkme.linkactivedemo;
+package cc.lkme.linkactive.demo;
 
 import android.Manifest;
 import android.app.Activity;
@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
+import cc.lkme.linkactive.R;
 import cc.lkme.linkactive.callback.OnSplashAdListener;
 import cc.lkme.linkactive.data.AdInfo;
 import cc.lkme.linkactive.view.LMSplashAd;

@@ -1,4 +1,4 @@
-package cc.lkme.linkactivedemo;
+package cc.lkme.linkactive;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

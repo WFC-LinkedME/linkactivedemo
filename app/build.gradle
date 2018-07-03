@@ -3,11 +3,11 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "com.microquation.linkedme"
+        applicationId "cc.lkme.linkactive.demo"
         minSdkVersion 14
         targetSdkVersion 27
-        versionCode 15
-        versionName "1.1.5"
+        versionCode 16
+        versionName "1.1.6"
     }
     buildTypes {
         debug {
@@ -21,11 +21,11 @@ android {
 }
 
 dependencies {
-    implementation files("libs/LinkedME-Active-SDK-V1.1.5.jar")
+    implementation files("libs/LinkedME-Active-SDK-V1.1.6.jar")
     implementation 'com.facebook.fresco:fresco:1.5.0'
     implementation "com.android.support:appcompat-v7:27.1.1"
     implementation "com.android.support:support-v4:27.1.1"
     implementation "com.android.support:recyclerview-v7:27.1.1"
-    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
     implementation "com.tencent.mm.opensdk:wechat-sdk-android-without-mta:5.1.4"
 }

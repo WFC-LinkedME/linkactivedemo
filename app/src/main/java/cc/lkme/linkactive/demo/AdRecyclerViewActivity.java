@@ -1,4 +1,4 @@
-package cc.lkme.linkactivedemo;
+package cc.lkme.linkactive.demo;
 
 import android.content.Context;
 import android.content.Intent;
@@ -6,7 +6,8 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 
-import cc.lkme.linkactivedemo.dummy.DummyContent;
+import cc.lkme.linkactive.R;
+import cc.lkme.linkactive.demo.dummy.DummyContent;
 
 public class AdRecyclerViewActivity extends AppCompatActivity implements ItemFragment.OnListFragmentInteractionListener {
 
