@@ -27,6 +27,12 @@
                 android:layout_height="wrap_content"/>
 
         <Button
+                android:id="@+id/viewpager"
+                android:text="ViewPager广告"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <Button
                 android:id="@+id/ad_recyclerview"
                 android:text="信息流广告(RecyclerView)"
                 android:layout_width="wrap_content"

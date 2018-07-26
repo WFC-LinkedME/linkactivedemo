@@ -6,8 +6,8 @@ android {
         applicationId "cc.lkme.linkactive.demo"
         minSdkVersion 14
         targetSdkVersion 27
-        versionCode 16
-        versionName "1.1.6"
+        versionCode 18
+        versionName "1.1.8"
     }
     buildTypes {
         debug {
@@ -21,7 +21,7 @@ android {
 }
 
 dependencies {
-    implementation files("libs/LinkedME-Active-SDK-V1.1.6.jar")
+    implementation files("libs/LinkedME-Active-SDK-V1.1.8.jar")
     implementation 'com.facebook.fresco:fresco:1.5.0'
     implementation "com.android.support:appcompat-v7:27.1.1"
     implementation "com.android.support:support-v4:27.1.1"

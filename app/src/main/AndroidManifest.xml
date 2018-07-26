@@ -79,7 +79,13 @@
                 android:name="cc.lkme.linkactive.demo.AdRecyclerViewActivity"
                 android:screenOrientation="portrait">
         </activity>
-        <activity android:name="cc.lkme.linkactive.demo.AdListViewActivity">
+        <activity
+                android:name="cc.lkme.linkactive.demo.AdListViewActivity"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name="cc.lkme.linkactive.demo.AdViewPagerActivity"
+                android:screenOrientation="portrait">
         </activity>
     </application>
 

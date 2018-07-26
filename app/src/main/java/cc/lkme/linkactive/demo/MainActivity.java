@@ -64,6 +64,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button viewpager = (Button) findViewById(R.id.viewpager);
+        viewpager.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AdViewPagerActivity.start(MainActivity.this, null);
+            }
+        });
         Button ad_recyclerview = (Button) findViewById(R.id.ad_recyclerview);
         ad_recyclerview.setOnClickListener(new View.OnClickListener() {
             @Override
